@@ -20,6 +20,7 @@
     background: white;
     color: rgb(109, 107, 107);
     border-color: darkgray;
+    margin-bottom: 3px;
 }
 
 .input > input[type="text"]:focus, .input > select:focus{
@@ -35,4 +36,34 @@
     background: white;
     color: rgb(109, 107, 107);
     border-color: darkgray;
+}
+
+.btn{
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 3px 0;
+}
+
+.btn.green{
+    color: white;
+    background: rgb(29, 173, 29);
+    clear: both;
+}
+
+.btn.blue{
+    color: white;
+    background: rgb(9, 165, 238);
+    clear: both;
+}
+
+.right{
+    float: right;
+}
+
+.small{
+    padding: .5em 1em;
+}
+.fluid{
+    width: 100%;
 }
