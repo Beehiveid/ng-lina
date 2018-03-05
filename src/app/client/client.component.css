@@ -22,6 +22,20 @@
     border-color: darkgray;
     margin-bottom: 3px;
 }
+.input > .readonly{
+    padding: .7em;
+    cursor: text;
+    width: 100%;
+    color: rgb(109, 107, 107);
+    border: none;
+    margin-bottom: 3px;
+}
+
+.input.readonly > label::after{
+    content: " (readonly)";
+    color: brown;
+    font-size: .7em;
+}
 
 .input > input[type="text"]:focus, .input > select:focus{
     outline:none;
@@ -64,6 +78,30 @@
 .small{
     padding: .5em 1em;
 }
+
 .fluid{
     width: 100%;
+}
+.header{
+    text-align: center;
+}
+
+.footer{
+    padding: .5em;
+    font-size: .7em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(10, 10, 17);
+    color: white;
+    text-align: center;
+}
+
+.footer::after{
+    content: " - Trademark by Beehive.id 2018"
+}
+
+form.center{
+    padding: 1.5em 33%;
 }
