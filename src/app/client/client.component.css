@@ -1,0 +1,38 @@
+.input{
+    display: block;
+    margin-bottom: 10px;
+    color: grey;
+    width: 100%;
+}
+
+.input > label{
+    font-size: .9em;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.input > input[type="text"]{
+    padding: .7em;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    background: white;
+    color: rgb(109, 107, 107);
+    border-color: darkgray;
+}
+
+.input > input[type="text"]:focus, .input > select:focus{
+    outline:none;
+}
+
+.input > select{
+    padding: .7em;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    background: white;
+    color: rgb(109, 107, 107);
+    border-color: darkgray;
+}
