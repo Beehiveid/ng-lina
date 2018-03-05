@@ -103,5 +103,10 @@
 }
 
 form.center{
-    padding: 1.5em 33%;
+    padding: 0 33% 1.5em;
+}
+
+span.blue{
+    color: rgb(9, 165, 238);
+    font-weight: bold;
 }
