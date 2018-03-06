@@ -1,5 +1,12 @@
 <div class="page">
-  <div class="header"><h1>Outletter Management System</h1></div>
+  <div class="header grid">
+    <div class="icon red">OMS</div>
+    <div class="title">
+      <div class="white">Outletter</div>
+      <div class="white">Management</div>
+      <div class="white">System</div>
+    </div>
+  </div>
 
 <div class="center">
   <form #outletterForm = "ngForm">
@@ -7,12 +14,12 @@
       <label>Tgl <span class="blue">6 Maret 2018</span></label>
     </div>
     <div class="input">
+        <label>Pengirim</label>
+        <input type="text" [(ngModel)]="sender">
+      </div>
+    <div class="input">
       <label>Perihal</label>
-      <input type="text">
-    </div>
-    <div class="input readonly">
-      <label>Tanggal</label>
-      <input type="text" class="readonly" readonly value="">
+      <input type="text" [(ngModel)]="perihal">
     </div>
     <div class="input">
       <label>Department</label>
@@ -21,8 +28,8 @@
       </select>
     </div>
     <div class="input">
-      <label>Tujuan</label>
-      <input type="text">
+      <label>Penerima</label>
+      <input type="text" [(ngModel)]="receiver">
     </div>
     <div class="input readonly">
       <label>Nomor Surat</label>

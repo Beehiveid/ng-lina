@@ -82,8 +82,70 @@
 .fluid{
     width: 100%;
 }
+
 .header{
-    text-align: center;
+    display: block;
+    padding: .5em 1em;
+    font-size: .7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(10, 10, 17);
+    color: white;
+    text-align: left;
+}
+
+.header > .icon{
+    font-size: 3em;
+    text-align: right;
+    /* border-right-width: 1px;
+    border-right-color: white;
+    border-right-style: solid; */
+    /* padding-right: 15%; */
+}
+
+.header > .title{
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+.icon.red{
+    color: brown;
+}
+
+.icon.green{
+    color: rgb(46, 182, 46);
+    
+}
+
+.icon.blue{
+    color: dodgerblue;
+    
+}
+.title > .white{
+    padding-left: 1%;
+    border-left: 1px solid white;
+}
+
+.title > .red{
+    padding-left: 1%;
+    border-left: 1px solid brown;
+}
+
+.title > .green{
+    padding-left: 1%;
+    border-left: 1px solid rgb(46, 182, 46);
+}
+
+.title > .blue{
+    padding-left: 1%;
+    border-left: 1px solid dodgerblue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 6% 95%;
 }
 
 .footer{
@@ -103,7 +165,7 @@
 }
 
 div.center{
-    padding: 1.5em 33%;
+    padding: 7% 33%;
 }
 
 span.blue{

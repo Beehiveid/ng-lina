@@ -10,6 +10,9 @@ export class ClientComponent implements OnInit {
   generatedNumber: string;
   department: string[];
   selectedDept: string;
+  perihal: string;
+  sender: string;
+  receiver: string;
 
   constructor(public outletter: OutletterService) { }
 
