@@ -105,3 +105,8 @@
 div.center{
     padding: 1.5em 33%;
 }
+
+span.blue{
+    color: rgb(9, 165, 238);
+    font-weight: bold;
+}
