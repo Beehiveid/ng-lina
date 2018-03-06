@@ -2,34 +2,34 @@
   <div class="header"><h1>Outletter Management System</h1></div>
 
 <div class="center">
-  <div class="input">
-    <label>Perihal</label>
-    <input type="text">
-  </div>
-  <div class="input readonly">
-    <label>Tanggal</label>
-    <input type="text" class="readonly" readonly value="">
-  </div>
-  <div class="input">
-    <label>Department</label>
-    <select>
-      <option>HR</option>
-      <option>Sales</option>
-      <option>IT</option>
-    </select>
-  </div>
-  <div class="input">
-    <label>Tujuan</label>
-    <input type="text">
-  </div>
-  <div class="input readonly">
-    <label>Nomor Surat</label>
-    <input type="text" class="readonly" name="outnumber" [(ngModel)]="generatedNumber" readonly >
-    <button class="btn green right small" (click)="getNumber()">Req.</button>
-  </div>
-  <div class="input">
-      <button class="btn blue fluid">Submit</button>
-  </div>
+  <form #outletterForm = "ngForm">
+    <div class="input">
+      <label>Perihal</label>
+      <input type="text">
+    </div>
+    <div class="input readonly">
+      <label>Tanggal</label>
+      <input type="text" class="readonly" readonly value="">
+    </div>
+    <div class="input">
+      <label>Department</label>
+      <select [(ngModel)]="selectedDept" name="department">
+        <option *ngFor="let dep of department" [value]="dep">{{ dep | uppercase }}</option>
+      </select>
+    </div>
+    <div class="input">
+      <label>Tujuan</label>
+      <input type="text">
+    </div>
+    <div class="input readonly">
+      <label>Nomor Surat</label>
+      <input type="text" class="readonly" name="outnumber" [(ngModel)]="generatedNumber" readonly >
+      <button class="btn green right small" (click)="getNumber()">Req.</button>
+    </div>
+    <div class="input">
+        <button class="btn blue fluid">Submit</button>
+    </div>
+  </form>
 </div>
 
 <div class="footer">Lina</div>
