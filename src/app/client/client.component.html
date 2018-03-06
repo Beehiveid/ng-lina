@@ -1,6 +1,7 @@
 <div class="page">
   <div class="header"><h1>Outletter Management System</h1></div>
-<form class="center">
+
+<div class="center">
   <div class="input">
     <label>Perihal</label>
     <input type="text">
@@ -23,13 +24,13 @@
   </div>
   <div class="input readonly">
     <label>Nomor Surat</label>
-    <input type="text" class="readonly" readonly value="">
-    <button class="btn green right small">Req.</button>
+    <input type="text" class="readonly" name="outnumber" [(ngModel)]="generatedNumber" readonly >
+    <button class="btn green right small" (click)="getNumber()">Req.</button>
   </div>
   <div class="input">
       <button class="btn blue fluid">Submit</button>
   </div>
-</form>
+</div>
 
 <div class="footer">Lina</div>
 </div>

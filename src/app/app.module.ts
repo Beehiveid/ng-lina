@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ClientComponent } from './client/client.component';
-import { AppRoutingModule } from './/app-routing.module';
-
+import { OutletterService } from './outletter.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,11 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [OutletterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
