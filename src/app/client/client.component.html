@@ -15,26 +15,26 @@
     </div>
     <div class="input">
         <label>Pengirim</label>
-        <input type="text" [(ngModel)]="sender">
+        <input type="text" [(ngModel)]="sender" name="sender">
       </div>
     <div class="input">
       <label>Perihal</label>
-      <input type="text" [(ngModel)]="perihal">
+      <input type="text" [(ngModel)]="perihal" name="perihal">
     </div>
     <div class="input">
       <label>Department</label>
-      <select [(ngModel)]="selectedDept" name="department">
+      <select [(ngModel)]="selectedDept" name="department" (change)="getNumber()">
         <option *ngFor="let dep of department" [value]="dep">{{ dep | uppercase }}</option>
       </select>
     </div>
     <div class="input">
       <label>Penerima</label>
-      <input type="text" [(ngModel)]="receiver">
+      <input type="text" [(ngModel)]="receiver" name="receiver">
     </div>
     <div class="input readonly">
       <label>Nomor Surat</label>
       <input type="text" class="readonly" name="outnumber" [(ngModel)]="generatedNumber" readonly >
-      <button class="btn green right small" (click)="getNumber()">Req.</button>
+      <button class="btn green right small" (click)="getNumber()">Verify</button>
     </div>
     <div class="input">
         <button class="btn blue fluid">Submit</button>

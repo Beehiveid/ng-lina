@@ -17,7 +17,6 @@ export class ClientComponent implements OnInit {
   constructor(public outletter: OutletterService) { }
 
   ngOnInit() {
-    this.generatedNumber = null;
     this.department = [
       "hr",
       "it",
@@ -26,6 +25,7 @@ export class ClientComponent implements OnInit {
       "marketing"
     ]
     this.selectedDept = this.department[0];
+    this.getNumber();
   }
 
   getNumber(){
@@ -35,5 +35,4 @@ export class ClientComponent implements OnInit {
       }
     );
   }
-
 }
