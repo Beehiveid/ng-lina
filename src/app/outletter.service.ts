@@ -17,4 +17,9 @@ export class OutletterService {
     let url = `http://localhost:3000/outletters/getNumber/${department}`;
     return this.http.get(url);
   }
+
+  submitOutletter(chunk: any): Observable<any>{
+    let url = `http://localhost:3000/outletters/`;
+    return this.http.post(url, chunk);
+  }
 }
